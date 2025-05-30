@@ -7,11 +7,7 @@ import os
 import time
 from multiprocessing import Process, Queue
 import numpy as np
-
-# Import all your existing classes and functions
-import cv2
 from ultralytics import YOLO
-import numpy as np
 import torch
 import torch.nn as nn
 from collections import deque
@@ -19,15 +15,8 @@ import torchvision.transforms as transforms
 from PIL import Image
 import string
 from scipy.special import softmax
-import os
-import time
-from multiprocessing import Process, Queue
 import collections
 import itertools
-
-# [Include all your existing classes here - strLabelConverter, BeamEntry, BeamState, 
-# BidirectionalLSTM, CRNN, AutoLPR, and all the worker functions]
-# For brevity, I'm not repeating them all, but they should be included exactly as in your original code
 
 class strLabelConverter(object):
     """Convert between str and label.
